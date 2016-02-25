@@ -1,4 +1,4 @@
-<<-SHELL
+#!/bin/bash
 echo success
 echo success
 echo success
@@ -17,4 +17,4 @@ echo success
 echo success
 echo success
 echo success
-SHELL
+
