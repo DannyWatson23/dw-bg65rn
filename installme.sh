@@ -1,20 +1,6 @@
 #!/bin/bash
-echo success
-echo success
-echo success
-echo success
-echo success
-echo success
-echo success
-echo success
-echo success
-echo success
-echo success
-echo success
-echo success
-echo success
-echo success
-echo success
-echo success
-echo success
+echo I am installing...
+sudo apt-get update -y
+sudo apt-get install -y nginx
+echo done...
 
