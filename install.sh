@@ -1,3 +1,3 @@
 #!/bin/sh -e
-echo I am installing
-echo done...
+curl -sL https://deb.nodesource.com/setup_5.x | sudo -E bash -
+
