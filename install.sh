@@ -1,7 +1,6 @@
 #!/bin/sh -e
 echo "Craeting fldler"
 su vagrant
-vagrant
 echo "one!"
 mkdir /root/.config/configstore
 echo "two"
