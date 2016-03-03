@@ -1,8 +1,8 @@
 #!/bin/sh
 echo "installing curl"
-curl -sL https://deb.nodesource.com/setup_5.x | sudo -E bash - -> /dev/null
+curl -sL https://deb.nodesource.com/setup_5.x | sudo -E bash - > /dev/null
 echo "installing node js"
-sudo apt-get install -y nodejs -> /dev/null
+sudo apt-get install -y nodejs > /dev/null
 echo "creating npm installer"
 npm install -g yo generator-hubot
 echo "going into shared folder"
