@@ -8,7 +8,6 @@ sudo npm install -g yo generator-hubot
 #echo "going into sudo su root"
 #su vagrant
 echo "Craeting fldler"
-mkdir /root/.config/configstore
 sudo mkdir /root/.config/configstore
 su mkdir /root/.config/configstore
 chmod g+rwx /root /root/.config /root/.config/configstore
