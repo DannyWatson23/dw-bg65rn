@@ -12,6 +12,7 @@ cd /Desktop/Shared
 mkdir hubot-sample
 cd hubot-sample
 npm init
-sudo yo hubot
+echo "creating hubot"
+yo hubot --defaults
 echo "creating hubot from shared folder"
 sudo yo hubot -g
