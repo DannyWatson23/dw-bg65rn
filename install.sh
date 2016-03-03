@@ -12,4 +12,4 @@ su vagrant
 echo "going into shared folder"
 cd /Desktop/Shared
 echo "creating hubot from shared folder"
-su yo hubot --defaults
+su yo hubot
