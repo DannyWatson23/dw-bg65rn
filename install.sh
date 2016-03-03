@@ -12,7 +12,7 @@ chmod g+rwx /root /root/.config /root/.config/configstore
 echo "going into shared folder"
 sudo su
 cd /home/vagrant
-yo hubot --name="Tron"	
+yo hubot
 echo 'export HUBOT_CAMPFIRE_TOKEN= "1111" ' >> home/vagrant/bin/.hubot 
 end
 
