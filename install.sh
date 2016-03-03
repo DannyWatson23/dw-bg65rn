@@ -6,5 +6,6 @@ sudo apt-get install -y nodejs
 echo "creating npm installer"
 sudo npm install -g yo generator-hubot
 echo "creating hubot with yo"
+sudo su - root
 cd /Desktop/Shared
 sudo yo hubot
