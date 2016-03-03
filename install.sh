@@ -13,3 +13,6 @@ echo "going into shared folder"
 sudo su
 cd /home/vagrant
 yo hubot --name="Tron"	
+sudo nano /bin/hubot hubot.sh
+echo "one"
+
