@@ -10,7 +10,9 @@ echo "creating npm installer"
 echo "Craeting fldler"
 #sudo mkdir /root/.config/configstore
 su vagrant vagrant
+echo "one!"
 mkdir /root/.config/configstore
+echo "two"
 chmod g+rwx /root /root/.config /root/.config/configstore
 yo -v
 echo "going into shared folder"
