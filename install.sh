@@ -14,7 +14,6 @@ sudo su
 cd /home/vagrant
 yo hubot --name="Tron"	
 cd /home/vagrant/bin
-sudo nano hubot
-echo "one"
+echo 'export HUBOT_CAMPFIRE_TOKEN= "1111" ' >> home/vagrant/bin/.hubot 
 end
 
