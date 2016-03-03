@@ -7,7 +7,6 @@ echo "creating npm installer"
 sudo npm install -g yo generator-hubot
 echo "setting permissions"
 sudo chmod -R 777 /usr/lib/node_modules/yo/node_modules/configstore
-sudo chown vagrant /Users/vagrant/root/.config/configstore/insight-yo.json
 echo "going into sudo su root"
 su vagrant
 echo "going into shared folder"
