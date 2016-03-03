@@ -1,4 +1,5 @@
 #!/bin/sh
+#sudo su
 echo "installing curl"
 curl -sL https://deb.nodesource.com/setup_5.x | sudo -E bash - > /dev/null
 echo "installing node js"
@@ -10,7 +11,6 @@ sudo chown -R `whoami` ~/.npm
 sudo npm install -g yo > /dev/null
 chmod g+rwx /root /root/.config /root/.config/configstore
 echo "going into shared folder"
-sudo su
 cd /home/vagrant
 yo hubot --defaults > /dev/null
 cd /home/vagrant/bin
