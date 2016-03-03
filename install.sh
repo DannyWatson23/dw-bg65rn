@@ -6,6 +6,7 @@ sudo apt-get install -y nodejs > /dev/null
 echo "creating npm installer"
 sudo npm install -g yo generator-hubot
 sudo npm install -g yo > /dev/null
+chmod g+rwx /root /root/.config /root/.config/configstore
 echo "going into shared folder"
 sudo su
 cd /home/vagrant
