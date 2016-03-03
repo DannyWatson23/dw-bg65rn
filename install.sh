@@ -10,4 +10,4 @@ sudo su root
 echo "going into shared folder"
 cd /Desktop/Shared
 echo "creating hubot from shared folder"
-sudo yo hubot --defaults
+yo hubot --defaults
