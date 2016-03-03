@@ -8,4 +8,5 @@ sudo mkdir /hubot && cd /hubot
 echo "creating npm installer"
 sudo npm install -g yo generator-hubot
 echo "creating hubot with yo"
-sudo yo hubot >> /Desktop/Shared
+sudo cd /Desktop/Shared
+sudo yo hubot
