@@ -5,12 +5,13 @@ echo "installing node js"
 sudo apt-get install -y nodejs
 echo "creating npm installer"
 sudo npm install -g yo generator-hubot
-echo "setting permissions"
-sudo chmod -R 777 /usr/lib/node_modules/yo/node_modules/configstore
-chmod g+rwx -R /usr/lib/node_modules
 #echo "going into sudo su root"
 #su vagrant
 echo "going into shared folder"
 cd /Desktop/Shared
+mkdir hubot-sample
+cd hubot-sample
+npm init
+sudo yo hubot
 echo "creating hubot from shared folder"
 sudo yo hubot -g
