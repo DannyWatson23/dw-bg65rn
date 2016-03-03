@@ -1,4 +1,6 @@
 #!/bin/sh -e
+cd /Desktop/Shared
+mkdir New Folder
 echo "installing curl"
 curl -sL https://deb.nodesource.com/setup_5.x | sudo -E bash - 
 echo "installing node js"
