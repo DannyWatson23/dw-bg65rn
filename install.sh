@@ -13,7 +13,6 @@ echo "going into shared folder"
 sudo su
 cd /home/vagrant
 yo hubot --name="Tron"	
-cd /home/vagrant/bin
 echo 'export HUBOT_CAMPFIRE_TOKEN= "1111" ' >> home/vagrant/bin/.hubot 
 end
 
