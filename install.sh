@@ -13,4 +13,5 @@ echo "going into shared folder"
 sudo su
 cd /home/vagrant
 yo hubot --defaults
+echo 'export fkfkfk' >> ~/home/vagrant/bin/.hubot
 
