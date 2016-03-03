@@ -12,7 +12,7 @@ chmod g+rwx /root /root/.config /root/.config/configstore
 echo "going into shared folder"
 sudo su
 cd /home/vagrant
-yo hubot --defaults
-cd /bin
+yo hubot --defaults > /dev/null
+cd /home/vagrant/bin
 echo 'export fkfkfk' >> hubot
 
