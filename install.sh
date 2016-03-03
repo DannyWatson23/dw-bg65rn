@@ -15,4 +15,5 @@ cd /home/vagrant
 yo hubot --defaults > /dev/null
 cd /home/vagrant/bin
 echo 'export fkfkfk' >> hubot
+echo "finished"
 
