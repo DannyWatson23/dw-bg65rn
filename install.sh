@@ -12,5 +12,5 @@ chmod g+rwx /root /root/.config /root/.config/configstore
 echo "going into shared folder"
 sudo su
 cd /home/vagrant
-yo hubot
+yo hubot --defaults
 
