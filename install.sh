@@ -11,7 +11,6 @@ echo "going into shared folder"
 cd /Desktop/Shared
 mkdir hubot-sample
 cd hubot-sample
-npm init
 echo "creating hubot"
 yo hubot --defaults
 echo "creating hubot from shared folder"
