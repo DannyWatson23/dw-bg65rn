@@ -15,4 +15,4 @@ sudo chmod -R 777 /usr/lib/node_modules/yo/node_modules/configstore
 echo "going into shared folder"
 cd /Desktop/Shared
 echo "creating hubot from shared folder"
-sudo yo hubot
+su yo hubot
