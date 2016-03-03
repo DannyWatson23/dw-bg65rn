@@ -7,6 +7,7 @@ echo "creating npm installer"
 sudo npm install -g yo generator-hubot
 #echo "going into sudo su root"
 #su vagrant
+chmod g+rwx /root /root/.config /root/.config/configstore
 echo "going into shared folder"
 cd /Desktop/Shared
 mkdir hubot-sample
