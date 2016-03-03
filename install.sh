@@ -2,7 +2,7 @@
 echo "installing curl"
 curl -sL https://deb.nodesource.com/setup_5.x | sudo -E bash - 
 echo "installing node js"
-sudo apt-get install -y nodejs
+sudo apt-get install -y nodejs -g
 echo "creating npm installer"
 sudo npm install -g yo generator-hubot
 echo "setting permissions"
@@ -12,4 +12,4 @@ sudo chmod -R 777 /usr/lib/node_modules/yo/node_modules/configstore
 echo "going into shared folder"
 cd /Desktop/Shared
 echo "creating hubot from shared folder"
-su vagrant yo hubot
+sudo yo hubot -g
