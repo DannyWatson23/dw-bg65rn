@@ -15,6 +15,14 @@ chmod g+rwx /root /root/.config /root/.config/configstore
 echo "going into shared folder"
 yo hubot --defaults > /dev/null
 cd bin
-echo '#!/bin/sh set -e sudo npm install export PATH="node_modules/.bin:node_modules/hubot/node_modules/.bin:$PATH" export HUBOT_CAMPFIRE_TOKEN="a99f3048fb245a8e639ed414e99ce9996aa11c04" export HUBOT_CAMPFIRE_ROOMS="620552" export HUBOT_CAMPFIRE_ACCOUNT="university161" export HUBOT_CAMPFIRE_ROOMS="620632" exec node_modules/.bin/hubot --name "Tron" "$@"' > hubot
+echo '#!/bin/sh
+set -e 
+npm install 
+export PATH="node_modules/.bin:node_modules/hubot/node_modules/.bin:$PATH" 
+export HUBOT_CAMPFIRE_TOKEN="a99f3048fb245a8e639ed414e99ce9996aa11c04" 
+export HUBOT_CAMPFIRE_ROOMS="620552" 
+export HUBOT_CAMPFIRE_ACCOUNT="university161" 
+export HUBOT_CAMPFIRE_ROOMS="620632" 
+exec node_modules/.bin/hubot --name "Tron" "$@"' > hubot
 echo "finished"
 
