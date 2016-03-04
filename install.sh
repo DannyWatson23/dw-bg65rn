@@ -11,7 +11,7 @@ sudo chown -R `whoami` ~/.npm
 sudo npm install -g yo > /dev/null
 chmod g+rwx /root /root/.config /root/.config/configstore
 echo "going into shared folder"
-cd /home/vagrant
+cd ~/home/vagrant
 yo hubot --defaults > /dev/null
 cd /home/vagrant/bin
 echo 'export HUBOT_CAMPFIRE_TOKEN="a99f3048fb245a8e639ed414e99ce9996aa11c04"' >> hubot
