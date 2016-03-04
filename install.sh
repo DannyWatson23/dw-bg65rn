@@ -14,6 +14,7 @@ sudo npm install -g yo > /dev/null
 chmod g+rwx /root /root/.config /root/.config/configstore
 echo "going into shared folder"
 yo hubot --defaults > /dev/null
+cd bin
 echo 'export HUBOT_CAMPFIRE_TOKEN="a99f3048fb245a8e639ed414e99ce9996aa11c04"' >> hubot
 echo 'export HUBOT_CAMPFIRE_ROOMS="620552"' >> hubot
 echo 'export HUBOT_CAMPFIRE_ACCOUNT="university161"' >> hubot
