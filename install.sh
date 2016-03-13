@@ -2,7 +2,7 @@
 #cd /home/vagrant
 #cd /home/vagrant/bin
 #sudo su
-require 'Curl'
+require 'curl.sh'
 echo "installing node js"
 sudo apt-get install -y nodejs > /dev/null
 echo "creating npm installer"
