@@ -2,6 +2,8 @@
 #cd /home/vagrant
 #cd /home/vagrant/bin
 #sudo su
+echo "installing curl"
+curl -sL https://deb.nodesource.com/setup_5.x | sudo -E bash - > /dev/null
 echo "installing node js"
 sudo apt-get install -y nodejs > /dev/null
 echo "creating npm installer"
