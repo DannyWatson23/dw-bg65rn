@@ -1,5 +1,7 @@
  #!/bin/sh
- 
+ #cd /home/vagrant
+ #cd /home/vagrant/bin
+ #sudo su
  #installing Curl
  if [ -f /etc/apt/sources.list.d/nodesource.list ] ; then echo "Curl has already been installed onto this machine, continuing onto the next program" ; 
  else echo "This machine does not have Curl installed, it will be installed now";
