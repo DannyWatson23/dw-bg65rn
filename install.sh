@@ -43,7 +43,7 @@ chmod g+rwx /root /root/.config /root/.config/configstore
 
 
 echo "going into shared folder"
-if [ -f ~/hubot-scripts.json]; then echo "Hubot has already been installed onto this machine, continuing onto the rest of the script"; clear;
+if [ -f /home/vagrant/bin/hubot]; then echo "Hubot has already been installed onto this machine, continuing onto the rest of the script"; clear;
 else echo "This machine does not have Hubot installed, it will be installed now";
 yo hubot --defaults > /dev/null
 echo "Hubot installed.";
