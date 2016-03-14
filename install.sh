@@ -12,7 +12,7 @@ fi
 #installing Node Js
 if [ -f /usr/bin/nodejs ] ; then echo "Node JS has already been installed onto this machine, continuing onto the next program"; clear;
 else echo "This machine does not have Node JS installed, it will be installed now";
-sudo apt-get install -y nodejs; > /dev/null;
+sudo apt-get install -y nodejs > /dev/null;
 echo "Node JS installed."
 clear;
 fi
