@@ -41,7 +41,7 @@ fi
 
 if [ -f /home/vagrant/bin/hubot.cmd ]; then echo "Hubot has already been installed onto this machine, continuing onto the rest of the script"; clear;
 else echo "This machine does not have Hubot installed, it will be installed now";
-yo hubot --defaults
+yo hubot --defaults > /dev/null
 fi
 
 
