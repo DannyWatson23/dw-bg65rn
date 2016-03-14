@@ -1,23 +1,31 @@
 #!/bin/sh
 
 #installing Curl
-if [ -f /etc/apt/sources.list.d/nodesource.list ] ; then echo "Curl has already been installed onto this machine, continuing onto the next program" ; 
+if [ -f /etc/apt/sources.list.d/nodesource.list ] ; then echo "Curl has already been installed onto this machine, continuing onto the next program" ; clear;
 else echo "This machine does not have Curl installed, it will be installed now";
 curl -sL https://deb.nodesource.com/setup_5.x | sudo -E bash - > /dev/null; 
 echo "Curl installed."
+clear;
 fi
 
 #installing Node Js
-if [ -f /usr/bin/nodejs ] ; then echo "Node JS has already been installed onto this machine, continuing onto the next program";
+if [ -f /usr/bin/nodejs ] ; then echo "Node JS has already been installed onto this machine, continuing onto the next program"; clear;
 else echo "This machine does not have Node JS installed, it will be installed now";
 sudo apt-get install -y nodejs; > /dev/null;
 echo "Node JS installed."
+clear;
 fi
 
-
-echo "creating npm installer"
+#Installing NPM
+if [ -f /usr/bin/coffee ]; then echo "NPM has already been installed onto this machine, continuing onto the next program"; clear;
+else echo "This machine does not have NPM installed, it will be installed now";
 npm install -g hubot coffee-script
 npm install -g yo generator-hubot
+echo "NPM installed"
+clear;
+fi
+
+#Changing the permissions
 chown -R `whoami` ~/.npm
 npm install -g yo
 chmod g+rwx /root /root/.config /root/.config/configstore
