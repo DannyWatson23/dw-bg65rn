@@ -67,5 +67,6 @@ export HUBOT_CAMPFIRE_ROOMS="620552"
 export HUBOT_CAMPFIRE_ACCOUNT="university161" 
 export HUBOT_CAMPFIRE_ROOMS="620632" 
 exec node_modules/.bin/hubot --name "Tron" "$@"' > hubot
-echo "finished"
+echo "This machine has been provisioned."
+echo "End of line."
 
