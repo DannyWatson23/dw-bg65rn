@@ -40,14 +40,11 @@ fi
 
 #changing permissions of files necessary for installing Hubot
 chmod g+rwx /root /root/.config /root/.config/configstore
-
-
 echo "going into shared folder"
+
 if [ -f /home/vagrant/bin/hubot.cmd ]; then echo "Hubot has already been installed onto this machine, continuing onto the rest of the script"; clear;
 else echo "This machine does not have Hubot installed, it will be installed now";
 yo hubot --defaults
-echo "Hubot installed.";
-clear
 fi
 
 
@@ -61,6 +58,5 @@ export HUBOT_CAMPFIRE_ROOMS="620552"
 export HUBOT_CAMPFIRE_ACCOUNT="university161" 
 export HUBOT_CAMPFIRE_ROOMS="620632" 
 exec node_modules/.bin/hubot --name "Tron" "$@"' > hubot
-echo "This machine has been provisioned."
-echo "End of line."
+
 
