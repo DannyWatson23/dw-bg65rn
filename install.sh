@@ -1,14 +1,20 @@
 #!/bin/sh
-#cd /home/vagrant
-#cd /home/vagrant/bin
-#sudo su
+
+#installing Curl
 if [ -f /etc/apt/sources.list.d/nodesource.list ] ; then echo "Curl has already been installed onto this machine, continuing onto the next program" ; 
 else echo "This machine does not have Curl installed, it will be installed now";
 curl -sL https://deb.nodesource.com/setup_5.x | sudo -E bash - > /dev/null; 
 echo "Curl installed."
 fi
-echo "Installing Node JS"
-sudo apt-get install -y nodejs
+
+#installing Node Js
+if [ -f /usr/bin/nodejs ] ; then echo "Node JS has already been installed onto this machine, continuing onto the next program";
+else echo "This machine does not have Node JS installed, it will be installed now";
+sudo apt-get install -y nodejs;
+echo "Node JS installed."
+fi
+
+
 echo "creating npm installer"
 npm install -g hubot coffee-script
 npm install -g yo generator-hubot
