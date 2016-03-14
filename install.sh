@@ -2,11 +2,11 @@
 
 #installing Curl
 if [ -f /etc/apt/sources.list.d/nodesource.list ] ; then echo "Curl has already been installed onto this machine, continuing onto the next program" ; 
-clear;
+clear
 else echo "This machine does not have Curl installed, it will be installed now";
 curl -sL https://deb.nodesource.com/setup_5.x | sudo -E bash - > /dev/null; 
 echo "Curl installed."
-clear;
+clear
 fi
 
 #installing Node Js
@@ -23,7 +23,7 @@ else echo "This machine does not have NPM installed, it will be installed now";
 npm install -g hubot coffee-script > /dev/null
 npm install -g yo generator-hubot > /dev/null
 echo "NPM installed"
-clear;
+clear
 fi
 
 #Changing the permissions
@@ -35,7 +35,7 @@ if [ -f /usr/bin/yo ]; then echo "Yeoman Generator is already installed onto thi
 else echo "This machine does not have Yeoman Generator, it will be installed now";
 npm install -g yo > /dev/null
 echo "Yeoman Generator installed.";
-clear;
+clear
 fi
 
 #changing permissions of files necessary for installing Hubot
@@ -47,7 +47,7 @@ if [ -f ~/hubot-scripts.json]; then echo "Hubot has already been installed onto 
 else echo "This machine does not have Hubot installed, it will be installed now";
 yo hubot --defaults > /dev/null
 echo "Hubot installed.";
-clear;
+clear
 fi
 
 
