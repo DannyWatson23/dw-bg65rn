@@ -2,8 +2,8 @@
 #cd /home/vagrant
 #cd /home/vagrant/bin
 #sudo su
-echo "installing curl"
-curl -sL https://deb.nodesource.com/setup_5.x | sudo -E bash 
+if [ -f /etc/apt/sources.list.d/nodesource.list ] ; echo "Curl has not been installed on this machine, it will be installed now"; echo "installing curl";
+curl -sL https://deb.nodesource.com/setup_5.x | sudo -E bash - > /dev/null; else echo "this machine already has Curl installed moving onto the next program"; fi
 echo "installing node js"
 sudo apt-get install -y nodejs > /dev/null
 echo "creating npm installer"
