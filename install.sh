@@ -10,7 +10,7 @@ fi
 #installing Node Js
 if [ -f /usr/bin/nodejs ] ; then echo "Node JS has already been installed onto this machine, continuing onto the next program";
 else echo "This machine does not have Node JS installed, it will be installed now";
-sudo apt-get install -y nodejs;
+sudo apt-get install -y nodejs; > /dev/null;
 echo "Node JS installed."
 fi
 
@@ -19,7 +19,7 @@ echo "creating npm installer"
 npm install -g hubot coffee-script
 npm install -g yo generator-hubot
 chown -R `whoami` ~/.npm
-npm install -g yo > /dev/null
+npm install -g yo
 chmod g+rwx /root /root/.config /root/.config/configstore
 echo "going into shared folder"
 yo hubot --defaults > /dev/null
