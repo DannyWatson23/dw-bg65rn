@@ -1,11 +1,14 @@
 #!/bin/sh
 
 #installing Curl
-if [ -f /etc/apt/sources.list.d/nodesource.list ] ; then echo "Curl has already been installed onto this machine, continuing onto the next program" ; clear;
+if [ -f /etc/apt/sources.list.d/nodesource.list ] ; then echo "Curl has already been installed onto this machine, continuing onto the next program" ; 
+clear;
+'clear';
 else echo "This machine does not have Curl installed, it will be installed now";
 curl -sL https://deb.nodesource.com/setup_5.x | sudo -E bash - > /dev/null; 
 echo "Curl installed."
 clear;
+'clear';
 fi
 
 #installing Node Js
