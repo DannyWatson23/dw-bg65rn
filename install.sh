@@ -22,18 +22,41 @@ fi
 #Installing NPM
 if [ -f /usr/bin/coffee ]; then echo "NPM has already been installed onto this machine, continuing onto the next program"; clear;
 else echo "This machine does not have NPM installed, it will be installed now";
-npm install -g hubot coffee-script
-npm install -g yo generator-hubot
+npm install -g hubot coffee-script > /dev/null
+npm install -g yo generator-hubot > /dev/null
 echo "NPM installed"
 clear;
 fi
 
 #Changing the permissions
 chown -R `whoami` ~/.npm
-npm install -g yo
+
+
+#Installing Yeoman Generator
+if [ -f /usr/bin/yo ]; then echo "Yeoman Generator is already installed onto this machine, continuing onto the next program"; clear;
+else echo "This machine does not have Yeoman Generator, it will be installed now";
+npm install -g yo > /dev/null
+echo "Yeoman Generator installed.";
+clear;
+'clear';
+'clear;';
+fi
+
+#changing permissions of files necessary for installing Hubot
 chmod g+rwx /root /root/.config /root/.config/configstore
+
+
 echo "going into shared folder"
+if [ -f ~/hubot-scripts.json]; then echo "Hubot has already been installed onto this machine, continuing onto the rest of the script"; clear;
+else echo "This machine does not have Hubot installed, it will be installed now";
 yo hubot --defaults > /dev/null
+echo "Hubot installed.";
+clear;
+'clear';
+'clear;';
+fi
+
+
 cd bin
 echo '#!/bin/sh
 set -e 
