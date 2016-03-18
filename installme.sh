@@ -3,8 +3,6 @@
  #cd /home/vagrant/bin
  #sudo su
 
-#Installing Nginx
-sudo apt-get install -y nginx
 
 #installing Curl
 if [ -f /etc/apt/sources.list.d/nodesource.list ] ; then echo "Curl has already been installed onto this machine, continuing onto the next program" ; 
